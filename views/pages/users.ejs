@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+	<meta charset="utf-8">
+	<title>Alco Mix</title>
+	<meta name ="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="author" content="" />
+	<meta name="Keywords" content="cocktails, drinks, alcohol drinks, party ideas, alco pops" />
+	<meta name="description" content="Alco Mix - Input your ingredients and find the perfect cocktail" />
+	<link rel="stylesheet" href="https://use.typekit.net/jdt1dzp.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="/public_html/css/style.css"  type="text/css"/>
+</header>
+
+
+<body class="container">
+    <header>
+      <%- include('../partials/header')%>
+    </header>
+
+  <main>
+    <div class="jumbotron" style="text-align: center; margin-top: 5%;">
+      <!--page to display all the users-->
+      <h2>All Accounts</h2>
+
+          <ul style="display: block; float: left; columns: 100px 3;">
+            <!-- for each user-->
+            <% users.forEach(function(user) { %>
+              <li>
+                <!-- create a link which directs to our /profile route and provides the username for tha user-->
+                <!-- display the users title, first and last name as the link text -->
+                <a href="/profile?username=<%= user.login.username %>"> <%= user.name.first %></a>
+              </li>
+            <% }); %>
+          </ul>
+
+
+    </div>
+  </main>
+
+
+  <footer>
+    <%- include('../partials/footer')%>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<title>Alco Mix</title>
+		<meta name ="viewport" content="width=device-width, user-scalable=no" />
+		<meta name="author" content="" />
+		<meta name="Keywords" content="cocktails, drinks, alcohol drinks, party ideas, alco pops" />
+		<meta name="description" content="Alco Mix - Input your ingredients and find the perfect cocktail" />
+		<link rel="stylesheet" href="/public_html/css/style.css"  type="text/css"/>
+		<link rel="stylesheet" href="https://use.typekit.net/jdt1dzp.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" type="text/css" href="./public_html/css/animations.css">
+	<link rel="stylesheet" href="https://use.typekit.net/zzo2rks.css">
+
+</head>
+	
+	
+	
+<body>
+	
+	<div class="transition"></div> <!--this is the lil bar part that moves over the screen-->
+	<div class="martini"><!--div for the background image -->
+		<div class="bg"><!--div for the actual page content part -->
+			<img class="logo" src="./public_html/img/logo.png"  alt="Logo image: Alco Mix"/>
+			<div class="verificationcontent">
+				<form method="post" onsubmit="return false;">
+					<br/>
+					<h1 class="verifyh1">You must be 18 or over to enter...</h1>
+					<br/>
+
+
+					<div class="dob-input">
+						<input type="text" id="dob-day" pattern="[0-9]*" maxlength="2" class="days" required="" placeholder="DD">
+						<input type="text" id="dob-month" pattern="[0-9]*" maxlength="2" class="months" required="" placeholder="MM">
+						<input type="text" id="dob-year" pattern="[0-9]*" maxlength="4" class="years" required="" placeholder="YYYY">
+					</div>
+
+					<br/>
+					<br/>
+
+					<div class="remembermebutton">					
+								<input type="checkbox" id="vehicle1" name="vehicle1" value="verify">
+								<label for="vehicle1">Remember me</label>
+								<!-- This is one of the locations that will need cookies in the next section of work -->
+					</div>
+					
+					<!-- The button to go to the next page. "cta" is the trigger for page animation, "hvr-outline-out" is of course the trigger for hover animation. the id class is just there to determine what the button looks like when nothing is happening -->
+
+				 	<button type="submit" class="cta hvr-outline-out" id="button"> Enter </button>
+				
+				</form>
+				
+			</div>
+			
+		</div>	
+
+					
+	</div>
+	
+	
+	<script src="../public_html/js/jquery-3.2.1.js"></script> 
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="../public_html/js/jquery.validate.min.js"></script> 
+	<script src="../public_html/js/script.js"></script> 
+	<script src="../public_html/js/verification.js"></script>
+</body>
+</html>

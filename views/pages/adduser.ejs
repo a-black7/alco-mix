@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+	<meta charset="utf-8">
+	<title>Alco Mix</title>
+	<meta name ="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="author" content="" />
+	<meta name="Keywords" content="cocktails, drinks, alcohol drinks, party ideas, alco pops" />
+	<meta name="description" content="Alco Mix - Input your ingredients and find the perfect cocktail" />
+	<link rel="stylesheet" href="https://use.typekit.net/jdt1dzp.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="./public_html/css/style.css"  type="text/css"/>
+</header>
+
+
+<body class="container">
+    <header>
+      <%- include('../partials/header') %>
+    </header>
+
+  <main>
+    <div class="jumbotron">
+
+      <!-- form with entry box for each bit of inomfrtaion we want from our user. -->
+      <h3>Add a User</h3>
+      <h4>
+      if you need to generate a fake user you can do it at <a href="https://randomuser.me/">https://randomuser.me/</a>
+      </h4>
+      <!-- submits to our /adduser route. -->
+      <form action="/adduser" method="POST">
+        <h1>Register</h1>
+   
+        <input type="text" placeholder="first" name="first">
+        <input type="text" placeholder="username"     name="username">
+        <input type="password" placeholder="password"  name="password">
+
+        </br><button type="submit">Submit</button>
+      </form>
+
+
+
+    </div>
+  </main>
+
+
+  <footer>
+    <%- include('../partials/footer') %>
+  </footer>
+
+</body>
+
+</html>

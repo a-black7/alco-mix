@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<title>Alco Mix</title>
+		<meta name ="viewport" content="width=device-width, user-scalable=no" />
+		<meta name="author" content="" />
+		<meta name="Keywords" content="cocktails, drinks, alcohol drinks, party ideas, alco pops" />
+		<meta name="description" content="Alco Mix - Input your ingredients and find the perfect cocktail" />
+		<link rel="stylesheet" href="/public_html/css/style.css"  type="text/css"/>
+		<link rel="stylesheet" href="https://use.typekit.net/jdt1dzp.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link href="//s.w.org/wp-includes/css/dashicons.css?20150710" rel="stylesheet" type="text/css">
+</head>
+
+<body>	
+	<div id="wrapper">
+		<header>
+			<%- include('../partials/header')%>
+		  </header>
+	<div class="divider"></div>
+	<h1 id="insert" class="favouritesbox" style="margin-top: 10%; font-size: 30px; margin-left: 45%;">Favourites</h1>
+	<h2 class="favouritesbox">We're sorry! This function is currently incomplete. You can save your favourites on their recipe pages for now, but they will not display! Watch this space! </h2>
+	<!--cocktail-images and link to details-->
+			<div class="container-results">			
+			<div class="box-con">
+				<div id="drink1box" class="grid box-one">
+					<!-- remember to id properly! -->
+					<h2 id="drink1name" class="results">Cocktail</h2>
+				</div>
+				<div class="cont">
+					<div class="fav-btn">
+						<span href="" class="favme dashicons dashicons-heart"></span>
+					</div>
+				</div>
+			</div>
+			<div class="box-mid">
+				<div id="drink2box" class="grid box-two">
+					<h2 id="drink2name" class="results">Cocktail</h2>				
+				</div>
+				<div class="cont">
+					<div class="fav-btn">
+						<span href="" class="favme dashicons dashicons-heart"></span>
+					</div>
+				</div>
+			</div>
+			<div class="box-con">
+				<div id="drink3box" class="grid box-three">
+					<h2 id="drink3name" class="results">Cocktail</h2>
+				</div>
+				<div class="cont">
+					<div class="fav-btn">
+						<span href="" class="favme dashicons dashicons-heart"></span>
+					</div>
+				</div>
+			</div>	
+	</div>
+
+	<!--/*overlay pop up. displaying cocktail ingredients and instructions*/
+    -->
+	<div class="overlay">
+		<div class="close"></div>
+		<div class="overlay-info o-info-one">
+			<div class="content">
+				<h2 class="results">Cocktail</h2>
+				<div class="image-1"></div>
+			</div>
+	<!--instructions and ingredients -->
+	<div class="container-text">
+	<div>	
+		<ul class="list">
+			<li id="detail1">White Rum</li>	
+						
+		</ul>
+	</div>
+	<div>
+		<ul class="list">
+			<li id="instruction1">fill up the shaker with ice cubes</li>
+		
+		</ul>
+	</div>
+	</div>
+		 
+		</div>
+		<div class="overlay-info o-info-two">
+			<div class="content">
+				<h2 class="results">Cocktail</h2>
+				<div class="image-1"></div>
+			</div>
+	<!--instructions and ingredients -->
+	<div class="container-text">
+	<div>	
+		   <ul class="list">
+				   
+			   <li id="detail2">White Rum</li>	
+		   </ul>
+	</div>
+	 <div>
+		   <ul class="list">
+			   <li id="instruction2">fill up the shaker with ice cubes</li>
+		   
+		   </ul>
+	   </div>
+	</div>
+		 
+		</div>
+		<div class="overlay-info o-info-three">
+			<div class="content">
+				<h2 class="results">Cocktail</h2>
+				<div class="image-1"></div>
+			</div>
+	<!--instructions and ingredients -->
+	<div class="container-text">
+	<div>	
+		   <ul class="list">
+				   
+			   <li id="detail3">White Rum</li>	
+			   
+		   </ul>
+		  
+	</div>
+	 <div>
+		   <ul class="list">
+			   <li id="instruction3">fill up the shaker with ice cubes</li>
+		   
+		   </ul>
+	   </div>
+	</div>
+	</div>
+
+	</div>
+	<footer>
+		<%- include('../partials/footer')%>
+	  </footer>
+
+</div>
+
+	<script src="./public_html/js/jquery-3.2.1.js"></script>
+	<script src="./public_html/js/script.js"></script>
+	<script src="./public_html/js/jquery.validate.min.js"></script>
+	<script src="./public_html/js/favorites.js"></script>
+	<script src="./public_html/js/results.js"></script>
+</body>
+</html>

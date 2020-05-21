@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Alco Mix</title>
+	<meta name ="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="author" content="" />
+	<meta name="Keywords" content="cocktails, drinks, alcohol drinks, party ideas, alco pops" />
+	<meta name="description" content="Alco Mix - Input your ingredients and find the perfect cocktail" />
+	<link rel="stylesheet" href="./public_html/css/style.css"  type="text/css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/jdt1dzp.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
+	<link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" >
+		<link href="//s.w.org/wp-includes/css/dashicons.css?20150710" rel="stylesheet" type="text/css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+
+	</script>
+
+
+
+
+</head>
+<body>
+	<div id="wrapper">
+
+		<header>
+			<%- include('../partials/header')%>
+		  </header>
+
+		<div class="bar"></div>
+		<h1 class="results">COCKTAIL RESULTS</h1>
+
+	<!--cocktail-images and link to details-->
+		
+	<div class="container-results">			
+		<div id="drink1" class="box-con">
+			<div id="drink1box" class="grid box-one">
+				<!-- remember to id properly! -->
+				<h2 id="drink1name" class="results">Cocktail</h2>
+			</div>
+			<div class="cont">
+				<div class="fav-btn">
+					<span href="" class="favme dashicons dashicons-heart"></span>
+				</div>
+			</div>
+		</div>
+		<div id="drink2" class="box-mid">
+			<div id="drink2box" class="grid box-two">
+				<h2 id="drink2name" class="results">Cocktail</h2>				
+			</div>
+			<div class="cont">
+				<div class="fav-btn">
+					<span href="" class="favme dashicons dashicons-heart"></span>
+				</div>
+			</div>
+		</div>
+		<div id="drink3" class="box-con">
+			<div id="drink3box" class="grid box-three">
+				<h2 id="drink3name" class="results">Cocktail</h2>
+			</div>
+			<div class="cont">
+				<div class="fav-btn">
+					<span href="" class="favme dashicons dashicons-heart"></span>
+				</div>
+			</div>
+		</div>	
+		<div id="drink4" class="box-con">
+			<div id="drink4box" class="grid box-four">
+				<h2 id="drink4name" class="results">Cocktail</h2>
+			</div>
+			<div class="cont">
+				<div class="fav-btn">
+					<span href="" class="favme dashicons dashicons-heart"></span>
+				</div>
+			</div>
+		</div>
+		<div id="drink5" class="box-mid">
+			<div id="drink5box" class="grid box-five">
+				<h2 id="drink5name" class="results">Cocktail</h2>
+			</div>
+			<div class="cont">
+				<div class="fav-btn">
+					<span href="" class="favme dashicons dashicons-heart"></span>
+				</div>
+			</div>
+		</div>
+		<div id="drink6" class="box-con">
+			<div id="drink6box" class="grid box-six">
+				<h2 id="drink6name" class="results">Cocktail</h2>
+			</div>
+			<div class="cont">
+				<div class="fav-btn">
+					<span href="" class="favme dashicons dashicons-heart"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+
+<!--/*overlay pop up. displaying coctail ingredients and instructions*/
+-->
+<div class="overlay">
+	<div class="close"></div>
+	<div class="overlay-info o-info-one">
+		<div class="content">
+			<h2 id="drink1nameoverlay" class="results">Cocktail</h2>
+			<div id="drink1boxoverlay" class="image-1"></div>
+		</div>
+<!--instructions and ingredients -->
+<div class="container-text">
+<div>	
+	<ul class="list">
+		<li id="detail1">White Rum</li>	
+					
+	</ul>
+</div>
+<div>
+	<ul class="list">
+		<li id="instruction1">fill up the shaker with ice cubes</li>
+	
+	</ul>
+</div>
+</div>
+	 
+	</div>
+	<div class="overlay-info o-info-two">
+		<div class="content">
+			<h2 id="drink2nameoverlay" class="results">Cocktail</h2>
+			<div id="drink2boxoverlay" class="image-1"></div>
+		</div>
+<!--instructions and ingredients -->
+<div class="container-text">
+<div>	
+	   <ul class="list">
+			   
+		   <li id="detail2">White Rum</li>	
+	   </ul>
+</div>
+ <div>
+	   <ul class="list">
+		   <li id="instruction2">fill up the shaker with ice cubes</li>
+	   
+	   </ul>
+   </div>
+</div>
+	 
+	</div>
+	<div class="overlay-info o-info-three">
+		<div class="content">
+			<h2 id="drink3nameoverlay" class="results">Cocktail</h2>
+			<div id="drink3boxoverlay" class="image-1"></div>
+		</div>
+<!--instructions and ingredients -->
+<div class="container-text">
+<div>	
+	   <ul class="list">
+			   
+		   <li id="detail3">White Rum</li>	
+		   
+	   </ul>
+	  
+</div>
+ <div>
+	   <ul class="list">
+		   <li id="instruction3">fill up the shaker with ice cubes</li>
+	   
+	   </ul>
+   </div>
+</div>
+</div>
+
+<div class="overlay-info o-info-four">
+<div class="content">
+	<h2 id="drink4nameoverlay" class="results">Cocktail</h2>
+	<div id="drink4boxoverlay" class="image-1"></div>
+</div>
+<!--instructions and ingredients -->
+	 <div class="container-text">
+ <div>	
+	 <ul class="list">
+	   
+	<li id="detail4">White Rum</li>	
+   
+	</ul>
+
+  </div>
+  
+<div>
+<ul class="list">
+   <li id="instruction4">fill up the shaker with ice cubes</li>
+
+  </ul>
+</div>
+</div>
+</div>
+
+<div class="overlay-info o-info-five">
+<div class="content">
+	   <h2 id="drink5nameoverlay" class="results">Cocktail</h2>
+	   <div id="drink5boxoverlay" class="image-1"></div>
+   </div>
+<!--instructions and ingredients -->
+		<div class="container-text">
+	<div>	
+		<ul class="list">
+		  
+	   <li id="detail5">White Rum</li>	
+	  
+	   </ul>
+ 
+	 </div>
+	 
+   <div>
+  <ul class="list">
+	  <li id="instruction5">fill up the shaker with ice cubes</li>
+  
+	 </ul>
+</div>
+</div>
+</div>
+
+<div class="overlay-info o-info-six">
+<div class="content">
+	<h2 id="drink6nameoverlay" class="results">Cocktail</h2>
+	<div id="drink6boxoverlay" class="image-1"></div>
+</div>
+ <!--instructions and ingredients -->
+<div class="container-text">
+<div>	
+<ul class="list">
+	   
+   <li id="detail6">White Rum</li>	
+   
+</ul>
+
+</div>
+<div>
+<ul class="list">
+   <li id="instruction6">fill up the shaker with ice cubes</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+		
+		
+
+	<footer>
+		<div class="drink">
+			<h3>ALWAYS DRINK RESPONSIBLY</h3>
+		</div>
+	<footer>
+
+
+	<script src="./public_html/js/jquery-3.2.1.js"></script> 
+    <script src="./public_html/js/script.js"></script> 
+	<script src="./public_html/js/jquery.validate.min.js"></script>
+	<script src="./public_html/js/results.js"></script>
+	<script src="./public_html/js/favorites.js"></script> 
+
+</body>
+</html>

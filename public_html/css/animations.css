@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* this section is all page transition */
+
+* {
+  padding:0;
+  margin:0;
+}
+
+body {
+  overflow-x:hidden;
+  font-family:arial;
+}
+
+.transition {
+  position:absolute;
+  height:100%;
+  width:10%;
+  background:linear-gradient(45deg, #904e95, #e96443);
+  transform: skewX(-5deg) translateX(-50px);
+  transition:2s all ease-in-out;
+  -webkit-transition:2s all ease-in-out;
+}
+
+.content {
+  position:relative;
+  padding:200px 0 0 200px;
+  color:#000;
+  z-index:10;
+  height:300px;
+}
+
+.cta {
+   position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  font-size: 30px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 15px;
+	cursor: pointer;
+}
+
+.anim-trans {
+  animation: anim 4s ease-in-out;
+  }
+
+@keyframes anim{
+     0% { }
+     20%  { z-index:11;\transform: skewX(5deg) translateX(-100%); }
+     40%   { transform: skewX(0deg) translateX(0);
+ width:100%; z-index:11; box-shadow: 10px 10px 5px #eaeaea;}
+     60%   { transform: skewX(3deg) translateX(0);
+		  width:100%;z-index:11; box-shadow: 10px 10px 5px #eaeaea;}
+     80%   { transform: skewX(1deg) translateX(-100%);
+ width:60%;z-index:11; box-shadow: 10px 10px 5px #eaeaea;}
+     100%   { transform: skewX(-5deg) translateX(-50px);
+ width:10%;z-index:1; box-shadow: none;}
+
+}
+
+/* everything from here foreward is for the hover effect on the button */
+
+/* Outline Out */
+.hvr-outline-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+	border-radius: 15px;
+}
+.hvr-outline-out:before {
+  content: '';
+  position: absolute;
+  border: #904e95 solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+  border-radius: 15px;
+}
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+}

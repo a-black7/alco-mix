@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <meta charset="utf-8">
+	<title>Alco Mix</title>
+	<meta name ="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="author" content="" />
+	<meta name="Keywords" content="cocktails, drinks, alcohol drinks, party ideas, alco pops" />
+	<meta name="description" content="Alco Mix - Input your ingredients and find the perfect cocktail" />
+	<link rel="stylesheet" href="https://use.typekit.net/jdt1dzp.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="./public_html/css/style.css"  type="text/css"/>
+</header>
+
+
+<body class="container">
+    <header>
+      <%- include('../partials/header')%>
+    </header>
+
+  <main>
+    <div class="jumbotron">
+      <!-- simple form to remove a user via their username-->
+      <h3>Delete a User</h3>
+      <form action="/delete" method="POST">
+        <input type="text" placeholder="username" name="username">
+        <button type="submit">Submit</button>
+      </form>
+
+    </div>
+  </main>
+
+
+  <footer>
+    <%- include('../partials/footer')%>
+  </footer>
+
+</body>
+
+</html>

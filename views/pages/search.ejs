@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Alco Mix</title>
+	<meta name ="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="author" content="" />
+	<meta name="Keywords" content="cocktails, drinks, alcohol drinks, party ideas, alco pops" />
+	<meta name="description" content="Alco Mix - Input your ingredients and find the perfect cocktail" />
+	<link rel="stylesheet" href="/public_html/css/style.css"  type="text/css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/jdt1dzp.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+	<div id="wrapper">
+
+		<header>
+			<%- include('../partials/header')%>
+		  </header>
+
+
+		<div class="bar"></div>
+		<section id="hero">
+			<h2>Cocktails</h2>
+			<div class="hero-text">
+				<h1 style="font-size:80px">Whats your Poison?</h1>
+				<p>Click below to find your perfect mix</p> <a href="#search"><button class="search">Search</button></a>
+			</div>
+		</section>
+
+
+
+		<div class="section" id="search">
+			<section class="about">
+				<div class="info">
+					<div class="cocktails">
+						<div class="pic"><img alt="Cocktail Image" src="/public_html/img/cocktails2.png"></div>
+			
+				
+							
+						<div class="searchinfo">
+						<h1 class="home">Find your perfect Mix!</h1>
+						<h2 class="drinkslist">Start by searching from Vodka, Gin, Rum, Tequila or Scotch </h2>
+						<input type="text" id="input">
+						</input>
+						<button type="button" id="submit" class="search">Search</button>
+						</div>
+							
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<%- include('../partials/footer')%>
+		  </footer>
+		<script src="./public_html/js/jquery-3.2.1.js">
+		</script> 
+		<script src="./public_html/js/script.js">
+		</script> 
+		<script src="./public_html/js/jquery.validate.min.js">
+		</script>
+		<script src="./public_html/js/search.js"></script>
+	</div>
+</body>
+</html>
